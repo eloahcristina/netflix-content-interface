@@ -1,0 +1,132 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--preta);
+  font-family: sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: 120px;
+  margin-left: 24px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 24px;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4) 100%),
+    url('../img/cover.jpg');
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 24px;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.filme-principal .autores {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.filme-principal .titulo img {
+  width: 26%;
+  height: 26%;
+  margin-bottom: 8px;
+}
+
+.botao-play {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 32px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.botao-play:hover {
+  background-color: var(--vermelho);
+  color: white;
+}
+
+.botao-mylist {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 32px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.botao-mylist:hover {
+  background-color: var(--vermelho);
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.carrosel-filmes {
+  padding: 32px;
+  margin-top: 5px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  margin-top: 32px;
+}
